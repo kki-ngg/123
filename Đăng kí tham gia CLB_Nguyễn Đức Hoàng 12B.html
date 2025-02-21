@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng kí tham gia CLB </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+        p {
+            font-weight: bold; 
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;">Đăng kí tham gia CLB</h1>
+    <form >
+        <fieldset style="background: url(h1.jpg) center center ;">
+            <p><label for="hovaten">Họ và tên: </label>
+                <input type="text" id="hovaten" name="hovaten">
+                <label for="lop">Lớp:</label>
+                <input type="text" id="lop" name="lop">
+            </p>
+            <p><label for="matkhau">Mật khẩu: </label>
+                <input type="password" id="matkhau" name="matkhau">
+            </p>
+            <p><label for="ngaysinh">Ngày sinh: </label>
+                <input type="date" id="ngaysinh" name="ngaysinh">
+            </p>
+            <p>
+                <label for="diachi" >Địa chỉ: </label>
+                <textarea id="diachi" name="diachi" rows="5" cols="20" style="vertical-align: middle;"></textarea>
+            </p>
+            <p><label>Giới tính: </label>
+                <input type="radio" id="nam" name="gioitinhnam" value="nam">Nam
+                <input type="radio" id="nu" name="gioitinhnu" value="nu" >Nữ
+            </p>
+            <table style="font-weight: bold; font-size: 18px;">
+                <td><label>Sở thích: </label></td>
+                <td>
+                    <input type="checkbox" id="sothichcovua" name="sothichcovua" value="covua">Cờ vua<br>
+                    <input type="checkbox" id="sothichgame" name="sothichgame" value="game">Game<br>
+                    <input type="checkbox" id="sothichdulich" name="sothichdulich" value="dulich">Du lịch<br>
+                    <input type="checkbox" id="sothichcamhoa" name="sothichcamhoa" value="camhoa">Cắm hoa<br>
+                    <input type="checkbox" id="sothichnauan" name="sothichnauan" value="nauan">Nấu ăn
+                </td>
+            </table>
+            <p><label for="thethao">Đăng kí CLB:  </label>
+                <select id="thethao" name="thethao">
+                    <option value="bongda">Bóng đá</option>
+                    <option value="bongban">Bóng bàn</option>
+                    <option value="bongro">Bóng rổ</option>
+                    <option value="bongchuyen">Bóng chuyền</option>
+                    <option value="caulong">Cầu lông</option>
+                    <option value="boiloi">Bơi lội</option>
+                    <option value="vothuat">Võ thuật</option>
+                </select>
+            </p>
+            <p><label for="hoso">Hồ sơ đính kèm (Lylich.pdf): </label>
+                <input type="file" id="hoso" name="hoso">
+            </p>
+            <p>
+                <input type="submit" name="dangki" value="Đăng kí">
+            </p>
+        </fieldset>
+    </form>
+</body>
